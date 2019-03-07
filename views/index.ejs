@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!--  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>-->
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+  <!--<link rel='stylesheet' href='stylesheets/bootstrap-theme.css'>-->
+
+</head>
+<body>
+<h1>我是主页</h1>
+<br>
+
+<button type="button" class="btn btn-primary">原始按钮</button>
+<!-- 表示一个成功的或积极的动作 -->
+<button type="button" class="btn btn-success">成功按钮</button>
+<!-- 信息警告消息的上下文按钮 -->
+<button type="button" class="btn btn-info">信息按钮</button>
+
+
+<!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 -->
+<button type="button" class="btn btn-link">点击登陆</button>
+</body>
+
+<script src="/javascripts/jquery.js"></script>
+<script src="/javascripts/bootstrap.js"></script>
+<script>
+    $('.btn-link').click(function () {
+        window.location.href='login'
+        console.log('ok')
+    })
+</script>
+</html>
